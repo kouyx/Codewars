@@ -1,4 +1,6 @@
 import re
+
+
 def order(sentence):
     """
     Sort a given string. Each word in the String contains a single number. 
@@ -21,4 +23,10 @@ def order(sentence):
             sorted_words[int(re.search(r'\d', w).group()) - 1] = w
         return " ".join(sorted_words)
 
-print(order("is2 Thi1s T4est 3a"))
+
+def order2(words):
+    return ' '.join(sorted(words.split(), key=lambda w: sorted(w)))
+
+
+def order3(sentence):
+    return " ".join(sorted(sentence.split(), key=lambda x: int(filter(str.isdigit, x))))
