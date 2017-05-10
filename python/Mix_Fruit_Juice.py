@@ -23,8 +23,8 @@ def mix_fruit(arr):
 
     regular = re.compile(r'(Banana)|(Orange)|(Apple)|(Lemon)|(Grapes)', re.I)  # $5 per each
     special = re.compile(r'(Avocado)|(Strawberry)|(Mango)', re.I)  # $7 per each
+    # return in 1 line if you wish:
+    # return round(float(5 * len(regular.findall(','.join(arr))) + 7 * len(special.findall(','.join(arr))) + 9 * (len(arr) - len(regular.findall(','.join(arr))) - len(special.findall(','.join(arr))))) / len(arr))
     per_5 = len(regular.findall(','.join(arr)))
     per_7 = len(special.findall(','.join(arr)))
-    per_9 = len(arr) - per_5 - per_7
-    return round((5 * per_5 + 7 * per_7 + 9 * per_9) / len(arr))
-
+    return round(float(5 * per_5 + 7 * per_7 + 9 * (len(arr) - per_5 - per_7)) / len(arr))
