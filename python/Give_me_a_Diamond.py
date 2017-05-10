@@ -11,6 +11,7 @@ def diamond(n):
     expected += " *\n"
     """
     # Make some diamonds!
-    if n % 2 == 0 or n < 0:
-        return None
-    return ''.join("{}{}\n".format((' ' * ((n - x) / 2)), '*' * x) for x in (range(1, n, 2) + range(n, 0, -2)))
+    if n % 2 == 0 or n < 0: return None
+    return ''.join((' ' * ((n - x) / 2) + '*' * x + "\n") for x in (range(1, n, 2) + range(n, 0, -2)))
+
+print(diamond(5))
