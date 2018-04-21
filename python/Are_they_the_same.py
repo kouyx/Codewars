@@ -30,17 +30,16 @@ If a or b are empty the result is evident by itself.
 
 
 def comp(array1, array2):
-    # Time: 537ms
-    if array1 is None or array2 is None:
-        return False
-    elif len(array1) != len(array2):
+    # Time: 549ms
+    if None in (array1, array2) or len(array1) != len(array2):
         return False
     else:
         arr1, arr2 = sorted(array1), sorted(array2)
-        for i in range(len(arr1)):
-            if arr1[i] * arr1[i] != arr2[i]:
+        for i, x in enumerate(arr1):
+            if x * x != arr2[i]:
                 return False
         return True
+
 
 if __name__ == '__main__':
     pass
