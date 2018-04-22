@@ -1,2 +1,2 @@
-# Codewars Challenge
-Challenges accepted in Codewars.
+# Coding Challenge
+Challenges accepted in Codewars and Leetcode.
