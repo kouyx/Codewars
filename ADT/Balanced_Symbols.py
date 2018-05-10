@@ -23,21 +23,14 @@ class Stack:
 
 def parChecker(sblStr):
     s = Stack()
+    pairs = {'(': ')', '[': ']', '{': '}'}
     for sbl in sblStr:
         if sbl in '([{':
             s.push(sbl)
         elif sbl in ')]}':
-            if s.isEmpty():
+            if s.isEmpty() or pairs[s.pop()] != sbl:
                 return False
-            if not match(s.pop(), sbl):
-                return False
-    return True if s.isEmpty() else False
-
-
-def match(open, close):
-    opens = '([{'
-    closers = ')]}'
-    return opens.index(open) == closers.index(close)
+    return s.isEmpty()
 
 
 if __name__ == "__main__":
