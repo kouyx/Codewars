@@ -1,26 +1,8 @@
-class Stack:
-    def __init__(self, init_stack=None):
-        if init_stack and isinstance(init_stack, list):
-            self.items = init_stack
-        else:
-            self.items = []
+"""
+You are given two arrays (without duplicates) nums1 and nums2 where nums1’s elements are subset of nums2. Find all the next greater numbers for nums1's elements in the corresponding places of nums2.
 
-    def isEmpty(self):
-        return self.items == []
-
-    def push(self, item):
-        self.items.append(item)
-
-    def pop(self):
-        return self.items.pop()
-
-    def peek(self):
-        return self.items[-1]  # return self.items[len(self.items)-1]
-
-    def size(self):
-        return len(self.items)
-
-
+The Next Greater Number of a number x in nums1 is the first greater number to its right in nums2. If it does not exist, output -1 for this number.
+"""
 class Solution:
     def nextGreaterElement(self, nums1, nums2):
         """
