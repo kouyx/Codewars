@@ -16,7 +16,7 @@ class Node:
         self.next = newnext
 
 
-class UnorderedList:
+class UnorderedList:  # Linked list
     def __init__(self):
         self.head = None
 
