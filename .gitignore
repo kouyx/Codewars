@@ -1,6 +1,9 @@
 # Change directory to this repo
 cd.txt
-
+# Just scratch
+test.py
+# Pycharm project
+.idea/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
