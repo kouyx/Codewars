@@ -101,7 +101,7 @@ class Solution2:
             for x in (2, 3, 5, 7, 11, 101):
                 if num <= x:
                     return x
-        for i in range(10 ** (int(len(str(num)) // 2)), 10 ** 5):
+        for i in range(10 ** (len(str(num)) // 2), 10 ** 5):
             digit = int(str(i) + str(i)[-2::-1])
             if digit >= num and isPrime(digit):
                 return digit
