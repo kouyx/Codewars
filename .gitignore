@@ -2,6 +2,8 @@
 cd.txt
 # Just scratch
 test.py
+# VS code
+.vscode/
 # Pycharm project
 .idea/
 # Byte-compiled / optimized / DLL files
@@ -93,3 +95,4 @@ ENV/
 
 # Rope project settings
 .ropeproject
+.vscode/settings.json
