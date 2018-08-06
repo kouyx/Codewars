@@ -22,6 +22,7 @@ class Solution:
         :rtype: List[int]
         """
 
+
 class Solution2:
     def advantageCount(self, A, B):
         """
@@ -46,11 +47,12 @@ class Solution2:
         i = 0
         for j in range(n):
             if used[j]: continue
-            while r[i] >=0:
+            while r[i] >= 0:
                 i += 1
             r[i] = A[j]
             i += 1
         return r
+
 
 if __name__ == "__main__":
     solu = Solution()
