@@ -1,4 +1,6 @@
 """
+weekly-contest-95 (7)
+
 profitable-schemes
 
 帮派里有 G 名成员，他们可能犯下各种各样的罪行。
@@ -20,15 +22,12 @@ profitable-schemes
 
 
 class Solution:
-    def minEatingSpeed(self, piles, H):
+    def profitableSchemes(self, G, P, group, profit):
         """
-        :type piles: List[int]
-        :type H: int
+        :type G: int
+        :type P: int
+        :type group: List[int]
+        :type profit: List[int]
         :rtype: int
         """
-
-
-if __name__ == "__main__":
-    solu = Solution()
-    mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    print("{}\n{}".format(mat, solu.transpose(mat)))
+        

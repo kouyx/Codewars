@@ -1,4 +1,6 @@
 """
+weekly-contest-94 (6)
+
 koko-eating-bananas
 
 珂珂喜欢吃香蕉。这里有 N 堆香蕉，第 i 堆中有 piles[i] 根香蕉。警卫已经离开了，将在 H 小时后回来。
@@ -18,9 +20,3 @@ class Solution:
         :type H: int
         :rtype: int
         """
-
-
-if __name__ == "__main__":
-    solu = Solution()
-    mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    print("{}\n{}".format(mat, solu.transpose(mat)))

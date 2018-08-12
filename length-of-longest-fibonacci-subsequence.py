@@ -1,4 +1,6 @@
 """
+weekly-contest-94 (6)
+
 length-of-longest-fibonacci-subsequence
 
 如果序列 X_1, X_2, ..., X_n 满足下列条件，就说它是 斐波那契式 的：
@@ -12,15 +14,9 @@ n >= 3
 
 
 class Solution:
-    def minEatingSpeed(self, piles, H):
+    def lenLongestFibSubseq(self, A):
         """
-        :type piles: List[int]
-        :type H: int
+        :type A: List[int]
         :rtype: int
         """
-
-
-if __name__ == "__main__":
-    solu = Solution()
-    mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    print("{}\n{}".format(mat, solu.transpose(mat)))
+        

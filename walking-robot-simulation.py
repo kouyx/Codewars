@@ -1,4 +1,6 @@
 """
+weekly-contest-94 (4)
+
 walking-robot-simulation
 
 无限网格上的机器人从点 (0, 0) 处开始出发，面向北方。该机器人可以接收以下三种类型的命令：

@@ -1,4 +1,6 @@
 """
+weekly-contest-96 (7)
+
 reachable-nodes-in-subdivided-graph
 
 从具有 0 到 N-1 的结点的无向图（“原始图”）开始，对一些边进行细分。
@@ -42,8 +44,3 @@ class Solution:
         :rtype: int
         """
         
-
-if __name__ == "__main__":
-    solu = Solution()
-    mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    print("{}\n{}".format(mat, solu.transpose(mat)))

@@ -1,4 +1,6 @@
 """
+weekly-contest-94 (4)
+
 leaf-similar-trees
 
 考虑一个二叉树的所有叶子。这些叶子的值按从左到右的顺序排列形成一个 叶值序列 。
@@ -52,9 +54,3 @@ class Solution:
             if leaf == [] or tree.pop().val != leaf.pop():
                 return False
         return True
-
-
-if __name__ == "__main__":
-    solu = Solution()
-    mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    print("{}\n{}".format(mat, solu.transpose(mat)))

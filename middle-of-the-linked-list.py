@@ -1,4 +1,6 @@
 """
+weekly-contest-95 (3)
+
 middle-of-the-linked-list
 
 给定一个带有头结点 head 的非空单链表，返回链表的中间结点。
@@ -26,9 +28,3 @@ class Solution:
             slow = slow.next
             fast = fast.next.next if fast.next is not None else None
         return slow
-
-
-if __name__ == "__main__":
-    solu = Solution()
-    mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    print("{}\n{}".format(mat, solu.transpose(mat)))

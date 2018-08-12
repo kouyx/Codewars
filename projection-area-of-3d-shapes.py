@@ -1,4 +1,6 @@
 """
+weekly-contest-96 (4)
+
 projection-area-of-3d-shapes
 
 在 N * N 的网格中，我们放置了一些与 x，y，z 三轴对齐的 1 * 1 * 1 立方体。
@@ -43,9 +45,3 @@ class Solution:
         :rtype: int
         """
         
-
-
-if __name__ == "__main__":
-    solu = Solution()
-    mat = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-    print("{}\n{}".format(mat, solu.transpose(mat)))

@@ -1,4 +1,6 @@
 """
+weekly-contest-95 (7)
+
 nth-magical-number
 
 如果正整数可以被 A 或 B 整除，那么它是神奇的。
@@ -42,7 +44,3 @@ class Solution:
                 break
         return ans % (10 ** 9 + 7)
 
-
-if __name__ == "__main__":
-    solu = Solution()
-    print("{}".format(solu.nthMagicalNumber(3, 6, 4)))
