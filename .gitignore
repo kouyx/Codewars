@@ -1,5 +1,5 @@
-# Change directory to this repo
-cd.txt
+# Mac 
+.DS_store
 # VS code
 .vscode/
 # Pycharm project
