@@ -104,8 +104,12 @@ class Solution:
 
 ### 计数
 
-继续对方法二进行优化。可以发现，矩阵中位于 `(x, y)` 位置的数为奇数，当且仅当 `rows[x]` 和 `cols[y]` 中恰好有一个为奇数。因此对于 `rows[x]` 为偶数，那么在第 `x` 行有 `count_odd(cols)` 个位置的数为奇数；对于 `rows[x]` 为奇数，那么在第 `x` 行有 `m - count_odd(cols)` 个位置的数为偶数，其中 `count_odd(cols)` 表示数组 `cols` 中奇数的个数。将所有的行 `x` 进行求和，可以得到奇数的数目为 `count_odd(rows) * (m - count_odd(cols)) + (n - count_odd(rows)) * count_odd(cols)`。
+继续对方法二进行优化。可以发现，矩阵中位于 `(x, y)` 位置的数为奇数，当且仅当 `rows[x]` 和 `cols[y]` 中恰好有一个为奇数。因此
 
+- 对于 `rows[x]` 为偶数，那么在矩阵第 `x` 行有 `count_odd(cols)` 个奇数
+- 对于 `rows[x]` 为奇数，那么在矩阵第 `x` 行有 `m - count_odd(cols)` 个偶数
+
+其中 `count_odd(cols)` 表示数组 `cols` 中奇数的个数。将所有的行进行求和，可以得到奇数的数目为 `count_odd(rows) * (m - count_odd(cols)) + (n - count_odd(rows)) * count_odd(cols)`。
 
 ```java
 class Solution {
