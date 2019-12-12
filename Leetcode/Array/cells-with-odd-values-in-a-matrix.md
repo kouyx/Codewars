@@ -2,7 +2,7 @@
 
 来源：[力扣（LeetCode）](https://leetcode-cn.com/problems/cells-with-odd-values-in-a-matrix)
 
-## 题目
+## 题目描述
 
 给你一个 `n` 行 `m` 列的矩阵，最开始的时候，每个单元格中的值都是 `0`。
 
@@ -12,7 +12,7 @@
 
 请你在执行完所有 `indices` 指定的增量操作后，返回矩阵中 「奇数值单元格」 的数目。
 
-## 解题
+## 题解
 
 启发于 [Shuxin Chen 的题解](https://leetcode-cn.com/problems/cells-with-odd-values-in-a-matrix/solution/ti-jie-1252-qi-shu-zhi-dan-yuan-ge-de-shu-mu-by-ze/)
 
