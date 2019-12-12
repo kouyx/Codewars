@@ -33,9 +33,7 @@ class Solution {
         int res = 0;
         for (int[] rs : mtx) {
             for (int x : rs) {
-                if (x % 2 != 0) {
-                    res += 1;
-                }
+                res += x % 2;
             }
         }
         return res;
@@ -54,14 +52,8 @@ class Solution:
 
             for i in range(n):
                 mtx[i][y] += 1
-        # 一行写法
-        return sum(ele % 2 == 1 for r in mtx for ele in r)
-        # 循环写法
-        # for r in mtx:
-        #     for x in r:
-        #         if x % 2 != 0:
-        #             res += 1
-        # return res
+        return sum(ele % 2 for r in mtx for ele in r)
+
 ```
 
 - 时间复杂度：$O(L(M+N)+MN)$，其中 $L$ 是 `indices` 数组的长度。
